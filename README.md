@@ -4,10 +4,12 @@ _Andrew Willms, Christian Bergmann, Erik Smith, Jonathan Gervais, Josh Cooke_
 
 &nbsp;
 ## The Needs We Have Observed
-- Hockey goalies are often in short supply.
-- Training tools exist for batters to practice hitting in baseball.
-- No such tools exist to substitute for goalies in hockey.
-- This results in hockey goalies being in very high demand for practice.
+- Hockey Goalies are often in very high demand for training
+- Shooting practice with a live Goalie is very tiring for the Goalie involved
+- This leads to Goalies not wanting to practice for too long
+- Current Substitution tools for Goalies are very basic and often do not mirror reality
+- Baseball has created a pitching system able to replicate the exact pitches of players
+- Creating a similar tool for hockey would reduce goalie wearout and increase player practice time
 
 &nbsp;
 ## Problem Statement
