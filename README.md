@@ -1,38 +1,51 @@
 # Goal-E
-### MTE 481 - Mechatronics Engineering Design Project
+#### MTE 481 - Mechatronics Engineering Design Project
 _Andrew Willms, Christian Bergmann, Erik Smith, Jonathan Gervais, Josh Cooke_
 
 &nbsp;
 ## The Needs We Have Observed
-- Hockey Goalies are often in very high demand for training
-- Shooting practice with a live Goalie is very tiring for the Goalie involved
-- This leads to Goalies not wanting to practice for too long
-- Current Substitution tools for Goalies are very basic and often do not mirror reality
-- Baseball has created a pitching system able to replicate the exact pitches of players
-- Creating a similar tool for hockey would reduce goalie wearout and increase player practice time
+- Hockey goalies are often in very high demand for training.
+- Many types of practice (such as shooting practice):
+  - are very tiring for the goalie,
+  - pose a substantial injury risk to the goalie, and
+  - are not valuable training for the goalie.
+- This leads to goalies not wanting to practice for long or deliberately missing practice.
+- Current tools to substitute for goalies are simple static elements. These elements:
+  - are a poor substitution, providing less valuable practice and
+  - are less engaging, leading players not making a full effort.
+- Baseball has created realistic pitching systems than enable hitters to practice without a pitcher. 
+- Creating a similar tool for hockey would:
+  - reduce goalie fatigue
+  - reduce goalie injury risk
+  - enable types of practice that are too injury prone for goalies (such as slapshot practice)
+  - increase player engagement during drills
+  - greatly increase the amount of time players are able to practice
 
 &nbsp;
 ## Problem Statement
 Create a reactive hockey training device for players to practice against, removing the need for a human goalie.
 
 ## Functions and Goals
-- Must have an e-stop button accessible from behind the net.
-- Must have remote e-stop capabilities.
-- Block, deflect, or capture pucks that are shot towards a hockey net.
+- Must be able to block, deflect, or capture pucks that are shot towards a hockey net.
+- Must be able to operate autonomously.
+- Must have an e-stop button accessible from behind the net and from a remote.
+- Must sense the position of the puck before it is shot and move to minimize the open portion of the net.
 
 ## Constraints
 - IP54 water and dust resistance.
 - Must be able to operate in temperatures from -20 °C to 40 °C.
-- Must CSA electrical safety approved.
-- Must CSA hockey safety rated (must be able to withstand the impact of a high velocity puck).
+- Must be able to withstand repeated 80 km/h slapshots.
+- Must be electrical safety approved.
 - Must be able to be powered of a single 10 A, 120 V circuit.
 
 ## Objectives
 - Complete the project using a total budget of $3000 or less.
-- Be able to move across the crease in less than 2 seconds.
-- Be able to react to an incoming puck in less than 20 ms.
-- Successfully identify the puck in 98% of frames caputered by the vision system when in view and within 6 meters.
-- Obstruct the same portion of the surface area of the net as an average \[insert league here eg. Junior B] goalie.
+- Be able to move across the crease in 2 seconds or less.
+- Be able to identify unobstructed pucks within 20m with an accuracy of 95% or greater.
+- Be able to identify pucks and estimate their postion in 30ms.
+- Obstruct the same area of the net as an average junior or adult goalie.
+- Be vulnerable to and effective against the same scoring strategies that human goalies are.
+- The design should encourage players to play against it in the same way they would play against a human goalie.
 
 ## Criteria
 
