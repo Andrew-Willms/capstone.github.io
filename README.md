@@ -43,7 +43,7 @@ Create a reactive hockey training device for players to practice against, removi
 - Be able to move across the crease in 2 seconds or less.
 - Be able to identify unobstructed pucks within 20m with an accuracy of 95% or greater.
 - Be able to identify pucks and estimate their postion in 30ms.
-- Be able to save 90% of unobstructed 50 km/h shots taken from 10m.
+- React correctly to 95% of unobstructed 50 km/h shots taken from 10m.
 - Obstruct the same area of the net as an average junior or adult goalie.
 - Be vulnerable to and effective against the same scoring strategies that human goalies are.
 - The design should encourage players to play against it in the same way they would play against a human goalie.
