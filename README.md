@@ -48,6 +48,13 @@ Create a reactive hockey training device for players to practice against, removi
 - The design should encourage players to play against it in the same way they would play against a human goalie.
 
 ## Criteria
+- Cost (CAD)
+- Cross-crease time (s)
+- Puck identification accurace (%)
+- Puck position estimation time (s)
+- Human-like area (x/10)
+- Human-like effectiveness (x/10)
+- Human-like feel (x/10)
 
 &nbsp;
 ## Design Log
