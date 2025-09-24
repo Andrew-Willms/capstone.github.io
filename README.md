@@ -15,26 +15,26 @@ _Andrew Willms, Christian Bergmann, Erik Smith, Jonathan Gervais, Josh Cooke_
 ## Problem Statement
 Create a reactive hockey training device for players to practice against, removing the need for a human goalie.
 
-## Functional Requirements
+## Functions and Goals
+- Must have an e-stop button accessible from behind the net.
+- Must have remote e-stop capabilities.
+- Block, deflect, or capture pucks that are shot towards a hockey net.
 
 ## Constraints
 - IP54 water and dust resistance.
 - Must be able to operate in temperatures from -20 °C to 40 °C.
-- Must have an e-stop button accessible from behind the net.
-- Must have remote e-stop capabilities.
 - Must CSA electrical safety approved.
 - Must CSA hockey safety rated (must be able to withstand the impact of a high velocity puck).
+- Must be able to be powered of a single 10 A, 120 V circuit.
 
 ## Objectives
+- Complete the project using a total budget of $3000 or less.
 - Be able to move across the crease in less than 2 seconds.
-- Be able to react to an incoming puck in less than 10 ms.
+- Be able to react to an incoming puck in less than 20 ms.
 - Successfully identify the puck in 98% of frames caputered by the vision system when in view and within 6 meters.
+- Obstruct the same portion of the surface area of the net as an average \[insert league here eg. Junior B] goalie.
 
 ## Criteria
-- Cost
-- Electrical Safety
-- Reaction time
-- Time to move across the crease
 
 &nbsp;
 ## Design Log
