@@ -1,5 +1,5 @@
-# Goal-E
-#### MTE 481 - Mechatronics Engineering Design Project
+# GOAL-E
+#### MTE 481 — Mechatronics Engineering Design Project
 _Andrew Willms, Christian Bergmann, Erik Smith, Jonathan Gervais, Josh Cooke_
 
 &nbsp;
@@ -36,7 +36,7 @@ Create a reactive hockey training device for players to practice against, removi
 - Must be able to operate in temperatures from -20°C to 40°C.
 - Must be able to withstand repeated 80km/h slapshots.
 - Must be electrical safety approved.
-- Must be able to be powered of a single 10A, 120V circuit.
+- Must be able to be powered off of a single 10A, 120V circuit.
 
 ## Objectives
 - Complete the project using a total budget of $3000 or less.
@@ -51,7 +51,7 @@ Create a reactive hockey training device for players to practice against, removi
 ## Criteria
 - Cost (CAD)
 - Cross-crease time (s)
-- Puck identification accurace (%)
+- Puck identification accuracy (%)
 - Puck position estimation time (s)
 - Human-like effectiveness (x/10)
 - Human-like feel (x/10)
