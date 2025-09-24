@@ -13,11 +13,11 @@ _Andrew Willms, Christian Bergmann, Erik Smith, Jonathan Gervais, Josh Cooke_
 - Current tools to substitute for goalies are simple static elements. These elements:
   - are a poor substitution, providing less valuable practice and
   - are less engaging, leading players not making a full effort.
-- Baseball has created realistic pitching systems than enable hitters to practice without a pitcher. 
+- Baseball has created realistic pitching systems that enable hitters to practice without a pitcher. 
 - Creating a similar tool for hockey would:
   - reduce goalie fatigue
   - reduce goalie injury risk
-  - enable types of practice that are too injury prone for goalies (such as slapshot practice)
+  - enable types of practice that pose a high risk of injury to goalies (such as slapshot practice)
   - increase player engagement during drills
   - greatly increase the amount of time players are able to practice
 
