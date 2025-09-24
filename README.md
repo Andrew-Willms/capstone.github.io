@@ -15,11 +15,7 @@ _Andrew Willms, Christian Bergmann, Erik Smith, Jonathan Gervais, Josh Cooke_
 ## Problem Statement
 Create a reactive hockey training device for players to practice against, removing the need for a human goalie.
 
-## Criteria
-- Cost
-- Electrical Safety
-- Reaction time
-- Time to move across the crease
+## Functional Requirements
 
 ## Constraints
 - IP54 water and dust resistance.
@@ -33,6 +29,12 @@ Create a reactive hockey training device for players to practice against, removi
 - Be able to move across the crease in less than 2 seconds.
 - Be able to react to an incoming puck in less than 10 ms.
 - Successfully identify the puck in 98% of frames caputered by the vision system when in view and within 6 meters.
+
+## Criteria
+- Cost
+- Electrical Safety
+- Reaction time
+- Time to move across the crease
 
 &nbsp;
 ## Design Log
