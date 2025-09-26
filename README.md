@@ -37,24 +37,27 @@ Create a reactive hockey training device for players to practice against, removi
 - Must be able to withstand repeated 80km/h slapshots.
 - Must be electrical safety approved.
 - Must be able to be powered off of a single 10A, 120V circuit.
+- Must be able to complete the project before symposium.
 
 ## Objectives
 - Complete the project using a total budget of $3000 or less.
 - Be able to move across the crease in 2 seconds or less.
 - Be able to identify unobstructed pucks within 20m with an accuracy of 95% or greater.
-- Be able to identify pucks and estimate their postion in 30ms.
-- React correctly to 95% of unobstructed 50km/h shots taken from 10m.
+- Be able to identify pucks and estimate their postion in 50ms.
+- Be able to identify the position of the puck within 5% of the distance to the puck.
+- React correctly to 95% of unobstructed 50km/h shots taken from 3-20m away.
 - Obstruct the same area of the net as an average junior or adult goalie.
 - Be vulnerable to and effective against the same scoring strategies that human goalies are.
 - The design should encourage players to play against it in the same way they would play against a human goalie.
 
 ## Criteria
 - Cost (CAD)
+- Effort to complete (/10)
 - Cross-crease time (s)
 - Puck identification accuracy (%)
 - Puck position estimation time (s)
-- Human-like effectiveness (x/10)
-- Human-like feel (x/10)
+- Puck position estimation accuracy (%)
+- Human-like feel and effectiveness (/10)
 
 &nbsp;
 ## Design Log
