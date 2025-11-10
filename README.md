@@ -69,11 +69,13 @@ Our design is a human silouette with moving goalie pads on the end of 2-degree o
 We roughly estimate that the human silouette will have a mass of at most 30kg and the telescoping arm will extend from 0.8m to 1.5m.
 
 ### Acceleration Requirements
-Our objectives dictate that the system needs to be able to move from one side of the crease to the other in two seconds. If we assume that acceleration and decceleration are approximately symetrical, this means the human sillouette needs to be able to move from one side of the crease to the center of the crease in at most one second. Based on our initial drawings, this motion is about 60 degrees or one radian. Using these values (30kg load on the end of a 1.5m arm) we were able to simulate the approximate perforance different combinations of motors and speed reducers would yield. The figure belows shows the performance of three Rev Neo 1.1 with a 100:1 reduction (motor selection explained beow). The green line crosses the 1 radian mark at approximately 400ms meaning this design theoretically meets the objective with a safety factor of 2.5.
+Our objectives dictate that the system needs to be able to move from one side of the crease to the other in two seconds. If we assume that acceleration and decceleration are approximately symetrical, this means the human sillouette needs to be able to move from one side of the crease to the center of the crease in at most one second. Based on our initial drawings, this motion is about 60 degrees or one radian. Using these values (30kg load on the end of a 1.5m arm) we were able to simulate the approximate perforance different combinations of motors and speed reducers would yield. The figure belows shows the performance of three Rev Neo 1.1 with a 100:1 reduction (motor selection explained beow). The green line crosses the one radian mark at approximately 400ms meaning this design theoretically meets the objective with a safety factor of 2.5.
+<img width="3167" height="2027" alt="Motor Dynamics Graph" src="https://github.com/user-attachments/assets/ff731feb-146f-4995-8941-8ecf562d2c62" />
+
 
 ### Motor Selection
-The [Neo Brushless 1.1](https://www.revrobotics.com/rev-21-1650/) was selected as our primary motor because our group has access to a large number of them at a heavily discounted price. The key specifications of these motors are:<br>
-- Nominal Voltage: 12V
+We selected the [Neo Brushless 1.1](https://www.revrobotics.com/rev-21-1650/) as our primary motor because our group has access to a large number of them at a heavily discounted price. The key specifications of these motors are:
+- Nominal Voltage: 12 V
 - Empirical Free Speed: 5676 RPM
 - Empirical Stall Torque: 2.6 Nm
 - Empirical Stall Current: 105 A
@@ -85,6 +87,17 @@ From our performance specifications we estimate a worst-case power draw to be:
 - 2 motors actuating the telescoping arm drawing stall current (105A, from motor specs)
 - 2 motors actuating the goalie pads drawing high current (40A, estimated)
 
+The math to calculate the system's peak current and power draw is shown below:<br>
+<img width="509" height="106" alt="image" src="https://github.com/user-attachments/assets/7e72ae40-5636-4826-98a1-9f44c1cbd240" /><br>
+Since 8520W is well in excess of the 1800W a 10A, 120V circuit can provide, the system must have onboard power source to supply power during peak load. We explored the possibility of using a battery bank as a buffer that would augument a (wall circuit driven) switching power supply while load was high and could be rechared while load was low. Unfortunately, due to electrical safety requirements and the added complexity of adding a charging circuit, we determined it would be far more achieveable to have the system run directly off battery power.
+
+### Battery Selection
+We selected the [MK Battery ES17-12](https://www.revrobotics.com/rev-19-2487/) as the batteries to use in the battery bank because our group has access to a large number of them at a heaviliy discounted price. The key specifications of these batteries are:
+- 12 V nominal (13 - 13.6V actual)
+- 270 A discharge for up to 5 seconds
+- 120 A continuous discharge
+- Internal resistance of 12 milliohm
+- 18 Ah
 
 &nbsp;
 ## Design Log
