@@ -100,7 +100,7 @@ We selected the [MK Battery ES17-12](https://www.revrobotics.com/rev-19-2487/) a
 
 ### Control System Dynamis
 The dynamics of the central pivot point are expression in the figure below. The equats on the right relate the input power of the motor, u, to the position, θ, of the the system at the next time increment. <br>
-<img width="1742" height="1346" alt="image" src="https://github.com/user-attachments/assets/3fb49c00-3cf8-47bb-91f9-60546dca63fd" /><br>
+<img width="1000" height="772" alt="image" src="https://github.com/user-attachments/assets/3fb49c00-3cf8-47bb-91f9-60546dca63fd" /><br>
 
 
 &nbsp;
