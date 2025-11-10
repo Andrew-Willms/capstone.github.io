@@ -70,7 +70,7 @@ We roughly estimate that the human silouette will have a mass of at most 30kg an
 
 ### Acceleration Requirements
 Our objectives dictate that the system needs to be able to move from one side of the crease to the other in two seconds. If we assume that acceleration and decceleration are approximately symetrical, this means the human sillouette needs to be able to move from one side of the crease to the center of the crease in at most one second. Based on our initial drawings, this motion is about 60 degrees or one radian. Using these values (30kg load on the end of a 1.5m arm) we were able to simulate the approximate perforance different combinations of motors and speed reducers would yield. The figure belows shows the performance of three Rev Neo 1.1 with a 100:1 reduction (motor selection explained beow). The green line crosses the one radian mark at approximately 400ms meaning this design theoretically meets the objective with a safety factor of 2.5.<br>
-<img width="200" height="128" alt="Motor Dynamics Graph" src="https://github.com/user-attachments/assets/ff731feb-146f-4995-8941-8ecf562d2c62" /><br>
+<img width="2000" height="1280" alt="Motor Dynamics Graph" src="https://github.com/user-attachments/assets/ff731feb-146f-4995-8941-8ecf562d2c62" /><br>
 
 ### Motor Selection
 We selected the [Neo Brushless 1.1](https://www.revrobotics.com/rev-21-1650/) as our primary motor because our group has access to a large number of them at a heavily discounted price. The key specifications of these motors are:
