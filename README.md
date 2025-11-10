@@ -3,7 +3,9 @@
 _Andrew Willms, Christian Bergmann, Erik Smith, Jonathan Gervais, Josh Cooke_
 
 &nbsp;
-## The Needs We Have Observed
+## Problem Formulation
+
+### The Needs We Have Observed
 - Hockey goalies are often in very high demand for training.
 - Many types of practice (such as shooting practice):
   - are very tiring for the goalie,
@@ -22,16 +24,16 @@ _Andrew Willms, Christian Bergmann, Erik Smith, Jonathan Gervais, Josh Cooke_
   - greatly increase the amount of time players are able to practice
 
 &nbsp;
-## Problem Statement
+### Problem Statement
 Create a reactive hockey training device for players to practice against, removing the need for a human goalie.
 
-## Functions and Goals
+### Functions and Goals
 - Must be able to block, deflect, or capture pucks that are shot towards a hockey net.
 - Must be able to operate autonomously.
 - Must have an e-stop button accessible from behind the net and from a remote.
 - Must sense the position of the puck before it is shot and move to minimize the open portion of the net.
 
-## Constraints
+### Constraints
 - IP54 water and dust resistance.
 - Must be able to operate in temperatures from -20°C to 40°C.
 - Must be able to withstand repeated 80km/h slapshots.
@@ -39,7 +41,7 @@ Create a reactive hockey training device for players to practice against, removi
 - Must be able to be powered off of a single 10A, 120V circuit.
 - Must be able to complete the project before symposium.
 
-## Objectives
+### Objectives
 - Complete the project using a total budget of $3000 or less.
 - Be able to move across the crease in 2 seconds or less.
 - Be able to identify unobstructed pucks within 20m with an accuracy of 95% or greater.
@@ -50,7 +52,7 @@ Create a reactive hockey training device for players to practice against, removi
 - Be vulnerable to and effective against the same scoring strategies that human goalies are.
 - The design should encourage players to play against it in the same way they would play against a human goalie.
 
-## Criteria
+### Criteria
 - Cost (CAD)
 - Effort to complete (/10)
 - Cross-crease time (s)
@@ -58,6 +60,31 @@ Create a reactive hockey training device for players to practice against, removi
 - Puck position estimation time (s)
 - Puck position estimation accuracy (%)
 - Human-like feel and effectiveness (/10)
+
+&nbsp;
+## Design
+
+(figuring pending)<br>
+Our design is a human silouette with moving goalie pads on the end of 2-degree of freedom robotic arm. The arm will be able pivot about a central point and telescope to become longer or shorter. These two motions should be sufficient to place the sillouette in the positions and orientations that a human goalie would most often occupy.
+We roughly estimate that the human silouette will have a mass of at most 30kg and the telescoping arm will extend from 0.8m to 1.5m.
+
+### Acceleration Requirements
+Our objectives dictate that the system needs to be able to move from one side of the crease to the other in two seconds. If we assume that acceleration and decceleration are approximately symetrical, this means the human sillouette needs to be able to move from one side of the crease to the center of the crease in at most one second. Based on our initial drawings, this motion is about 60 degrees or one radian. Using these values (30kg load on the end of a 1.5m arm) we were able to simulate the approximate perforance different combinations of motors and speed reducers would yield. The figure belows shows the performance of three Rev Neo 1.1 with a 100:1 reduction (motor selection explained beow). The green line crosses the 1 radian mark at approximately 400ms meaning this design theoretically meets the objective with a safety factor of 2.5.
+
+### Motor Selection
+The [Neo Brushless 1.1](https://www.revrobotics.com/rev-21-1650/) was selected as our primary motor because our group has access to a large number of them at a heavily discounted price. The key specifications of these motors are:<br>
+- Nominal Voltage: 12V
+- Empirical Free Speed: 5676 RPM
+- Empirical Stall Torque: 2.6 Nm
+- Empirical Stall Current: 105 A
+We plan to use three or four Neos to power the pivot point, two to power the telescoping of the arm, and two more to move the goalie pads.
+
+### Worst-Case Power Consumption Senario
+From our performance specifications we estimate a worst-case power draw to be:
+- 4 motors actuating the pivot point drawing stall current (105A, from motor specs)
+- 2 motors actuating the telescoping arm drawing stall current (105A, from motor specs)
+- 2 motors actuating the goalie pads drawing high current (40A, estimated)
+
 
 &nbsp;
 ## Design Log
